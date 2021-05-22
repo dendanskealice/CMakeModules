@@ -18,10 +18,10 @@ if(HLSLCC_USE_STATIC_LIBS)
 endif()
 
 if(${MSVC})
-    set(YAMLCPP_LIBNAME "hlslcc" CACHE STRING "Name of HLSLcc library")
-    set(YAMLCPP_LIBNAME optimized ${YAMLCPP_LIBNAME} debug hlslcc)
-else() ### Set Yaml libary name for Unix, Linux, OS X, etc
-    set(YAMLCPP_LIBNAME "hlslcc" CACHE STRING "Name of YAML library")
+    set(HLSLCC_LIBNAME "hlslcc" CACHE STRING "Name of HLSLcc library")
+    set(HLSLCC_LIBNAME optimized ${HLSLCC_LIBNAME} debug hlslcc)
+else() ### Set HLSLcc libary name for Unix, Linux, OS X, etc
+    set(HLSLCC_LIBNAME "hlslcc" CACHE STRING "Name of HLSLcc library")
 endif()
 
 # Find the HLSL include directory.
